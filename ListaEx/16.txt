@@ -1,0 +1,26 @@
+16. Identifique qual é o resultado da compilação e avaliação das expressões a seguir, podendo
+ser um determinado valor ou lista de valores, erro de sintaxe ou erro de tipo.
+
+
+a. if 1 == 2 then "abc" else [’d’, ’e’, ’f’]
+erro de conversao de tipos
+
+
+b. let pot_dois x | x <= 0 = 1
+    | otherwise = 2 * pot_dois (x-1)
+in pot_dois 6
+
+
+
+c. case not (1 /= 2) of
+    True -> 3
+    False -> "fim”
+erro conversao de tipos
+
+d. filter (not . even . (+3)) [5, 6, 7, 8, 9]
+
+
+e. sum (map (logBase 3) [9, 27, 81])
+
+
+f. foldl (\x y -> x + y) 0 [10,20,30]

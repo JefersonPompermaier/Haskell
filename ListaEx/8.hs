@@ -1,9 +1,9 @@
 import System.IO
 
 
-calc :: [a] -> a
-calc [x] = x
-calc (x:xs) = calc xs
+calc :: [a] -> [a]
+calc [x] = []
+calc (x:xs) = (x : calc (xs))
 
 
 main :: IO ()
